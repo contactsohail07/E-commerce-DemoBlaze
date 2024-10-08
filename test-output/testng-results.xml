@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-07T16:38:23 IST" name="Suite" finished-at="2024-10-07T16:39:37 IST" duration-ms="74623">
+    <groups>
+    </groups>
+    <test started-at="2024-10-07T16:38:23 IST" name="Test" finished-at="2024-10-07T16:39:37 IST" duration-ms="74623">
+      <class name="demoblaze.ecom.CategoriesTest">
+        <test-method signature="phoneSelect()[pri:0, instance:demoblaze.ecom.CategoriesTest@1ed4ae0f]" started-at="2024-10-07T16:39:04 IST" name="phoneSelect" finished-at="2024-10-07T16:39:20 IST" duration-ms="15889" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e6420559af355f045cde40bdbff2825, clickElement {id=f.81D60F88561A461DC086D74F4E5029B1.d.E43D37C990F671A97AF833B4C40D6FF8.e.270}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: /var/folders/dm/m5g2kn4x32x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50922/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (7e6420559af355f045cde40bdbff2825)] -> xpath: //a[contains(text(),'Iphone 6')]]
+Session ID: 7e6420559af355f045cde40bdbff2825]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.6.1', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e6420559af355f045cde40bdbff2825, clickElement {id=f.81D60F88561A461DC086D74F4E5029B1.d.E43D37C990F671A97AF833B4C40D6FF8.e.270}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: /var/folders/dm/m5g2kn4x32x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50922/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (7e6420559af355f045cde40bdbff2825)] -> xpath: //a[contains(text(),'Iphone 6')]]
+Session ID: 7e6420559af355f045cde40bdbff2825
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.CategoriesPage.phones(CategoriesPage.java:31)
+at demoblaze.ecom.CategoriesTest.phoneSelect(CategoriesTest.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneSelect -->
+      </class> <!-- demoblaze.ecom.CategoriesTest -->
+      <class name="demoblaze.ecom.CartTest">
+        <test-method signature="editCart()[pri:1, instance:demoblaze.ecom.CartTest@11392934]" started-at="2024-10-07T16:39:20 IST" name="editCart" finished-at="2024-10-07T16:39:25 IST" duration-ms="5047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCart -->
+        <test-method signature="order()[pri:2, instance:demoblaze.ecom.CartTest@11392934]" started-at="2024-10-07T16:39:25 IST" name="order" finished-at="2024-10-07T16:39:29 IST" duration-ms="4430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order -->
+      </class> <!-- demoblaze.ecom.CartTest -->
+      <class name="demoblaze.ecom.LogoutTest">
+        <test-method signature="logoutCheck()[pri:0, instance:demoblaze.ecom.LogoutTest@6892b3b6]" started-at="2024-10-07T16:39:29 IST" name="logoutCheck" finished-at="2024-10-07T16:39:37 IST" duration-ms="7729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutCheck -->
+      </class> <!-- demoblaze.ecom.LogoutTest -->
+      <class name="demoblaze.ecom.LoginTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:demoblaze.ecom.LoginTest@f0c8a99]" started-at="2024-10-07T16:38:23 IST" name="initialization" finished-at="2024-10-07T16:38:45 IST" duration-ms="22738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="loginCheck()[pri:0, instance:demoblaze.ecom.LoginTest@f0c8a99]" started-at="2024-10-07T16:38:46 IST" name="loginCheck" finished-at="2024-10-07T16:39:04 IST" duration-ms="18240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCheck -->
+      </class> <!-- demoblaze.ecom.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
